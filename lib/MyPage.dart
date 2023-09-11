@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gaming_app/constt.dart';
-import 'package:fab_circular_menu/fab_circular_menu.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MyPage extends StatelessWidget {
@@ -9,40 +8,7 @@ class MyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(41, 30, 83, 1),
-      floatingActionButton: FabCircularMenu(
-          alignment: Alignment.topRight,
-          ringDiameter: 500.0,
-          ringWidth: 150.0,
-          fabElevation: 5,
-//          animationCurve: Curves.easeInOutQuad,
-          ringColor: Color.fromRGBO(209,164,231, 1),
-          fabColor:Colors.white,
-          fabCloseIcon: Icon(Icons.supervised_user_circle,color: Colors.black,size: 60,),
-          fabOpenIcon:  Icon(Icons.supervised_user_circle,color: Colors.black,size: 60,),
-          children: <Widget>[
-           Image(
-             image:AssetImage('images/face1.png'),
-             height: 60,
-           ),
-            Image(
-              image:AssetImage('images/face2.png'),
-              height: 60,
-            ),
-            Image(
-              image:AssetImage('images/face3.png'),
-              height: 60,
-            ),
-            Image(
-              image: AssetImage('images/face4.png'),
-              height: 60,
-            ),
-            Image(
-              image:AssetImage('images/face5.png'),
-              height: 60,
-            ),
-          ]
-      ),
-      body: Container(
+       body: Container(
         margin: EdgeInsets.all(25),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
